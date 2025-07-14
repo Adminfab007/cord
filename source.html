@@ -277,8 +277,7 @@
       appendLog(`🔎 Filter applied: ${activeTag}`);
 
       // Limit to 1–3 random servers
-    //   filteredServers = filteredServers.sort(() => 0.5 - Math.random()).slice(0, Math.ceil(Math.random() * 3));
-    filteredServers=2
+      filteredServers = filteredServers.sort(() => 0.5 - Math.random()).slice(0, Math.ceil(Math.random() * 3));
 
       for (let srv of filteredServers) {
         const x = Math.random() * 90 + 5;
